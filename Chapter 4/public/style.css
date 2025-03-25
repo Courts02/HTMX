@@ -1,0 +1,73 @@
+/* style.css */
+
+/* General styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Centering container */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #4f4d4d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    color: #00bcd4; /* Cool blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search input */
+input.form-control {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input.form-control:focus {
+    background-color: #333;
+    border: 2px solid #00bcd4;
+}
+
+/* Table styling */
+.table {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #00bcd4;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.table tbody tr:hover {
+    background-color: #333;
+}
+
+/* Animating search results */
+#search-results {
+    transition: all 0.3s ease-in-out;
+}
+
+#search-results.htmx-swapping {
+    opacity: 0.5;
+}
