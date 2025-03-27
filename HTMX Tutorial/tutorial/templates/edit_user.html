@@ -1,0 +1,19 @@
+<form action="{% url 'update_user' id=user_id %}" method="post">
+    {% csrf_token %}
+    <!-- Input field for name -->
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" value="Greg Lim">             
+    </div>
+    <!-- Textarea for bio -->
+    <div class="mb-3">
+        <label for="bio" class="form-label">Bio</label>
+        <textarea type="text" class="form-control" id="bio" name="bio">
+            Follower of Christ | Author of Best-selling Amazon Tech Books and Creator of Coding Courses
+        </textarea>      
+    </div>
+    <!-- Save Changes button -->
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <!-- Cancel button -->
+    <a href="/example.html" class="btn btn-secondary">Cancel</a>
+</form>  
